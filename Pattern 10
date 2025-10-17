@@ -1,0 +1,15 @@
+class Solution {
+
+    void printTriangle(int n) {
+        String pattern = "";
+        for(int col=1;col<=n;col++){
+            pattern += "* ";
+            System.out.println(pattern);
+        }
+        for(int col=n-1;col>=1;col--){
+            pattern = pattern.substring(0,pattern.length()-2);
+            System.out.println(pattern);
+        }
+        
+    }
+}
